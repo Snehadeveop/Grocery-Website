@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../Front end 2/register/regstyle.css">
+    <link rel="stylesheet" href="../Front end 2/styleh.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Register</title>
+    <style>
+        header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: #fff; 
+    z-index: 1000; 
+}
+    </style>
+</head>
+<body>
+    <header>    
+    <a  class="logo"><i class="bx bxs-basket"></i>Indian Spices</a>
+
+    <div class="bx bx-menu" id="menu-icon"></div>
+    <ul class="navbar">
+        <li><a href="../Front end 2/main.html" class="home-active">Home</a></li>
+        <li><a href="../Front end 2/know products/productpage.html">Know Our Products</a></li>
+        <li><a href="../Front end 2/add to cart/add to cart.html">All Products</a></li>
+        <li><a href="../Front end 2/contact us/contactus.html">Contact</a></li>
+    </ul>
+
+    <div class="profile">
+        <a href="../Front end 2/main.html"><img src="../Front end 2/images/back.webp" alt=""></a>
+        
+    </div>
+</header>
+    <div class="container">
+        <div class="reglog">
+            <form action="../Front end 2/add to cart/add to cart.html" class="reglogform">
+                <h2 class="title">LOGIN</h2>
+                <div class="inputf">
+                    <i class="fas fa-user" style="flex: 1; text-align: center;color: #666;font-size: 18px;margin-right: 40px;"></i>
+                    <input type="text" placeholder="username">
+                </div>
+
+                <div class="inputf">
+                    <i class="fas fa-lock" style="flex: 1; text-align: center;color: #666;font-size: 18px;margin-right: 40px;"></i>
+                    <input type="password" placeholder="password">
+                </div>
+                <input type="submit"  value="Login" class="logbtn" id="loginBtn">
+                <p class="social-text">Or sign in with social platforms</p>
+                <div class="socialmedia">
+                    <a href="" class="socialicon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="socialicon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a href="" class="socialicon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="socialicon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </form>
+           
+            <form action="../Front end 2/add to cart/add to cart.html" class="regregform">
+                <h2 class="title">REGISTER</h2>
+                <div class="inputf">
+                    <i class="fas fa-user" style="flex: 1; text-align: center;color: #666;font-size: 18px;margin-right: 40px;"></i>
+                    <input type="text" placeholder="username">
+                </div>
+
+                <div class="inputf">
+                    <i class="fas fa-envelope" style="flex: 1; text-align: center;color: #666;font-size: 18px;margin-right: 40px;"></i>
+                    <input type="text" placeholder="email">
+                </div>
+
+                <div class="inputf">
+                    <i class="fas fa-user" style="flex: 1; text-align: center;color: #666;font-size: 18px;margin-right: 40px;"></i>
+                    <input type="password" placeholder="password">
+                </div>
+                <input type="submit"  value="Sign-up" class="logbtn">
+                <p class="social-text">Or sign in with social platforms</p>
+                <div class="socialmedia">
+                    <a href="" class="socialicon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="" class="socialicon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+
+                    <a href="" class="socialicon">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="socialicon">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                
+            </form>
+        </div>
+        <div class="panel">
+            <div class="panels leftp">
+                <div class="content">
+                    <h3>Already Signed in?</h3>
+                    <p>Welcome back to Taste Of India! We're thrilled to have you here again, ready to explore our wide range of aromatic spices and delectable snacks.Thank you for choosing Indian Spices and Snacks. Enjoy your shopping experience!</p>
+                
+                    <button class="logbtn" id="sign_in_btn">Sign in</button>
+                </div>
+                <img src="../Front end 2/images/undraw_undraw_undraw_undraw_team_effort_yj7m_ej3u_wvay_kpbw.svg" alt="" class="pimage">
+            </div>
+
+            <div class="panels rightp">
+                <div class="content">
+                    <h3>New to Taste Of India?</h3>
+                    <p>Welcome to Taste Of India! Delve into a world of vibrant flavors and irresistible delights. Whether you're a seasoned chef or an adventurous foodie, discover the essence of Indian cuisine with us. Get ready to embark on a culinary journey like no other!</p>
+      
+                    <button class="logbtn" id="sign_up_btn">Sign up</button>
+                </div>
+                <img src="../Front end 2/images/undraw_sign_up_n6im.svg" alt="" class="pimage">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../Front end 2/register/reg.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#loginBtn").click(function(){
+                // Do something when login button is clicked
+                alert("Login successful!");
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylesheet" href="../Front end 2/styleh.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .flex-item {
+            width: calc(22.33% - 20px);
+            height: 220px;
+            background-color: #f0f0f0;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            overflow: hidden; /* Hide overflowing content */
+            position: relative; /* Relative positioning for absolute positioned elements */
+        }
+
+        .flex-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out; /* Add transition effect */
+        }
+
+        .flex-item:hover img {
+            transform: scale(1.1); /* Increase size on hover */
+        }
+
+        .flex-item a {
+            text-decoration: none;
+            color: inherit; /* Inherit color from parent */
+        }
+
+        .flex-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0; /* Initially invisible */
+            transition: opacity 0.3s ease-in-out; /* Add transition effect */
+        }
+
+        .flex-item:hover .overlay {
+            opacity: 1; /* Show overlay on hover */
+        }
+
+        .flex-item .overlay-content {
+            text-align: center;
+            color: #fff;
+        }
+
+        .heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: green;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        /* Additional styles */
+        .categories {
+            padding: 0 20px;
+        }
+
+        /* Cart icon */
+        .cart-icon {
+            margin-left: 10px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <object type="text/html" data="../Front end 2/navigation/navigationbar.html" style="width: 100%;"></object>
+
+
+<div class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-item">
+            <div class="image-container">
+                <img src="../Front end 2/images/b1.svg" alt="Image 1">
+                <div class="image-text">
+                    <p>Dive in for more details</p>
+                    <button style="background-color: red; color: black;">Explore</button>
+                </div>        
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="image-container">
+                <img src="../Front end 2/images/spices shop.jpg" alt="Image 1">
+                <div class="image-text">
+                    <p></p>
+                </div>        
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="image-container">
+                <img src="../Front end 2/images/im1.jpg " alt="Image 1">
+                <div class="image-text">
+                    <p></p>
+                </div>        
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="image-container">
+                <img src="../Front end 2/images/delivery.jpg" alt="Image 1">
+                <div class="image-text">
+                    <p></p>
+                </div>        
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="image-container">
+                <img src="../Front end 2/images/b1.svg" alt="Image 1">
+                <div class="image-text">
+                    <p>Dive in for more details</p>
+                    <button>Explore</button>
+                </div>        
+            </div>
+        </div>
+    </div>
+</div>
+<button class="carousel-btn carousel-prev" onclick="moveSlide(-1)">&#10094;</button>
+<button class="carousel-btn carousel-next" onclick="moveSlide(1)">&#10095;</button>
+
+
+        <!-- Add more carousel items here -->
+
+    </div>
+</div>
+
+<section class="categories" id="categories">
+    <div class="heading">
+        <h1>Browse For TOP  <br><span>Categories</span></h1>
+        <a href="../Front end 2/add to cart.html" class="btn">View All <i class="bx bx-right-arrow-alt"></i></a>
+    </div>
+        
+    <div class="flex-container">
+        <!-- Flex container 1 -->
+        <div class="flex-item">
+            <a href="../Front end 2/categories/flour/flour.html">
+                <img src="../Front end 2/images/flour.webp" alt="Image 1">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        Flour
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Flex container 2 -->
+        <div class="flex-item">
+            <a href="../Front end 2/categories/spices/spices.html">
+                <img src="../Front end 2/images/spices.jpg" alt="Image 2">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        Spices
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <!-- Flex container 3 -->
+        <div class="flex-item">
+            <a href="../Front end 2/categories/biscuit/biscuit.html" target="_blank">
+                <img src="../Front end 2/images/bisc.jpg" alt="Image 3">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        Biscuits
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="flex-item">
+            <a href="../Front end 2/categories/dairy/dairy.html">
+                <img src="../Front end 2/images/dairy.webp" alt="Image 4">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        Dairy
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="flex-item">
+            <a href="../Front end 2/categories/oil/oil.html">
+                <img src="../Front end 2/images/oil.jpeg" alt="Image 5">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        Oil
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="flex-item">
+            <a href="../Front end 2/categories/rice/rice.html">
+                <img src="../Front end 2/images/rice.jpg" alt="Image 6">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        Rice
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="flex-item">
+            <a href="../Front end 2/categories/daal/daal.html">
+                <img src="../Front end 2/images/daal.jpg" alt="Image 7">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        Daal
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="flex-item">
+            <a href="../Front end 2/categories/snacks/snacks.html">
+                <img src="../Front end 2/images/kur.webp" alt="Image 8">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        Snacks and Chats
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        
+        
+    </div>
+</section>
+
+<!-- Add more sections or content here -->
+
+<div>
+  <img src="../Front end 2/images/banner2.webp" alt="" class="dbanner" style="padding-top: 50px;">
+</div>
+
+
+<footer>
+
+    <div class="container__footer">
+        <div class="box__footer">
+            <div class="logo">
+                <img src="Images/logo-magtimus.png" alt="">
+            </div>
+            <div class="terms">
+                <p> From the bold flavors of vibrant red chili powder to the subtle hints of fragrant cardamom, our store offers a rich tapestry of ingredients to elevate your culinary creations. Let the essence of India infuse your dishes with our premium selection of spices, carefully curated to bring authentic flavors to your kitchen. Whether you're a seasoned chef or an adventurous home cook, come explore the vibrant palette of our Indian Spice Store and embark on a culinary journey like no other."</p>
+            </div>
+        </div>
+        <div class="box__footer">
+            <h2>INDIAN SPICES</h2>
+            <a href="../Front end 2/main.html">HOME</a>
+            <a href="../Front end 2/know products/productpage.html">Our Products Description</a>
+            <a href="../Front end 2/add to cart/add to cart.html">All Products</a>
+            <a href="../Front end 2/contact us/contactus.html">Contact Us</a>
+        </div>
+
+        
+        <div class="box__footer">
+            <h2>Connect Us On</h2>
+            <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+            <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+            <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+            <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+        </div>
+
+    </div>
+
+    <div class="box__copyright">
+        <hr>
+        <p>Copyrights © 2024 <b>Indian Spices.ltd</b></p>
+    </div>
+</footer>
+<script src="main.js"></script>
+
+</script>
+
+</body>
+</html>

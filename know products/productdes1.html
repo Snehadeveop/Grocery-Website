@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="../styleh.css">
+    <link rel="stylesheet" href="../know products/pdes.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        
+        /* Base CSS */
+        * {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            margin-top: 15px;
+        }
+
+        
+    
+        /* Product section styles */
+        .product-container {
+            display: flex;
+            padding-bottom: 150px;
+            margin-top: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .product-container:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image {
+            flex: 0 0 40%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .product-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .product-details {
+            flex: 1;
+            padding: 1.5rem;
+        }
+
+        .product-details h2 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-details p {
+            margin-bottom: 1rem;
+        }
+
+        .quantity-input {
+            margin-bottom: 1rem;
+        }
+
+        .add-to-cart {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #218838;
+        }
+
+        .product-section container{
+            padding-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <object type="text/html" data="../navigation/navigationbar.html" style="width: 100%;"></object>
+
+
+    <section class="product-section container">
+        <!-- Product 1 -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="../images/turmeric.jpg" alt="Product 1">
+            </div>
+            <div class="product-details">
+                <h2>Organic Turmeric Powder</h2>
+                <p>Turmeric, scientifically known as Curcuma longa, is a perennial flowering plant from the ginger family, native to South Asia. Renowned for its vibrant yellow-orange hue, turmeric has been celebrated for centuries for its culinary, medicinal, and cultural significance.
+                    <br>In the culinary realm, turmeric is a staple ingredient in many cuisines, particularly in Indian, Southeast Asian, and Middle Eastern cooking. It lends its distinctive flavor and color to a wide array of dishes, including curries, stews, rice dishes, and beverages like golden milk.
+                    Beyond its culinary uses, turmeric boasts a rich history of medicinal application. It contains an active compound called curcumin, which is revered for its potent antioxidant and anti-inflammatory properties. In traditional medicine systems such as Ayurveda and Traditional Chinese Medicine, turmeric has been utilized to support digestion, promote skin health, alleviate pain, and bolster overall well-being.</p>
+                    <br>In Indian culinary traditions, turmeric powder is a staple ingredient, adding both color and flavor to a variety of dishes. It has a warm, earthy flavor with subtle hints of ginger and orange, making it versatile for use in curries, stews, rice dishes, and lentil preparations. Turmeric powder is often used in combination with other spices like cumin, coriander, and chili powder to create complex and aromatic spice blends, such as curry powder and garam masala.
+
+                    Beyond its culinary uses, turmeric powder is renowned for its medicinal properties in Ayurveda, the traditional Indian system of medicine. It is believed to have anti-inflammatory, antioxidant, and antimicrobial properties, making it a popular remedy for various ailments ranging from digestive issues to skin conditions. Turmeric powder is often mixed with milk or water to create a soothing tonic, or applied topically as a paste for skincare purposes.
+                
+                
+            </div>
+        </div>
+        
+
+    </section>
+
+    
+    <section class="other-products container" style="margin-top: 40px;">
+        <h2>Other Products</h2>
+        <div class="shop-content" style="margin-top: 40px;">
+            <div class="product-box">
+                <a href="../know products/productdes12.html"><img src="../images/asfotida.jpg" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Asfoetida</h2></center>
+                <center><span class="price">10$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes2.html"><img src="../images/chilli.webp" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Chillie Powder</h2></center>
+                <center><span class="price">10$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes3.html"><img src="../images/corriander.avif" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Corriander Powder</h2></center>
+                <center><span class="price">10$</span></center>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

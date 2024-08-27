@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../biscuit/biscuit.css">
+    <link rel="stylesheet" href="../biscuit/styleb.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<style>z
+    header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-color);
+  box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
+  padding: 20px 100px;
+  transition: 0.5s;
+
+}
+
+.profile{
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  cursor: pointer;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+.profile span{
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  column-gap: 0.5rem;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+.logo .bx {
+  font-size: 24px;
+  color: var(--orange-color);
+} 
+
+.navbar {
+  display: flex;
+  column-gap: 0.5rem;
+  padding-left: 25%;
+}
+
+.navbar a{
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  font-style: bold;
+}
+
+.navbar a:hover,
+.navbar .home-active {
+  background: var(--green-color);
+  border-radius: 5rem;
+  color: var(--bg-color);
+  transition: bac 0.5s;
+
+}
+
+#menu-icon{
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+.container .shopping img{
+    width: 30px; /* Adjust the width to make the cart image smaller */
+}
+
+.container .shopping .quantity{
+  margin-left: 19%;
+}
+
+
+
+</style>
+<body class="">
+    <a  class="logo"><i class="bx bxs-basket"></i>Indian Spices</a>
+
+    <ul class="navbar">
+        <li><a href="/main.html" class="home-active">Home</a></li>
+        <li><a href="/../Front end 2/know products/">Know Our Products</a></li>
+        <li><a href="/add to cart/add to cart.html">All Products</a></li>
+        <li><a href="/contact us/contactus.html">Contact</a></li>
+    </ul>
+    
+    <div class="container">
+        <div class="shopping">
+            <img src="../biscuit/cart.png" >
+            <span class="quantity">0</span>
+        </div>
+        
+        <div class="list">
+          
+        </div>
+    </div>
+    <div class="card">
+        <b><h1>Your Cart</h1></b>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <div class="total"><h1>Total</h1>0</div>
+            <div class="closeShopping">Close</div>
+        </div>
+    </div>
+
+    <script src="../biscuit/biscuit.js"></script>
+</body>
+</html>

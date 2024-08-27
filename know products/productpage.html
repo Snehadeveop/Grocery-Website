@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+    <link rel="stylesheet" href="../styleh.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="../know products/pdes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-padding-top: 2rem;
+            scroll-behavior: smooth;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        :root {
+            --main-color: green;
+            --text-color: black;
+            --bg-color: white;
+        }
+
+        img {
+            width: 80%;
+            transition: all 0.4s ease;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: #fff; 
+            z-index: 1000; 
+        }
+
+        body {
+            color: var(--text-color);
+        }
+
+        section {
+            padding: 4rem 0 3rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .shop {
+            margin-top: 2rem;
+        }
+
+        .shop-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1.5rem;
+        }
+
+        .product-box {
+            width: calc(25% - 1.5rem);
+            position: relative;
+            transition: all 0.4s ease;
+            border: 1px solid transparent;
+            overflow: hidden;
+            border-radius: 10px;
+            
+        }
+
+        .product-box:hover {
+            border: 1px solid var(--text-color);
+            transition: all 0.4s ease;
+        }
+
+        .product-img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 0.5rem;
+            margin-left: 5px;
+            
+        }
+
+        .product-box:hover .product-img {
+            transform: scale(0.9);
+        }
+
+        .product-box:hover::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: all 0.4s ease;
+        }
+
+        .product-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            z-index: 1;
+            position: relative;
+        }
+
+        .price {
+            font-weight: 500;
+            z-index: 1;
+            position: relative;
+        }
+
+        .add-cart {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: var(--text-color);
+            color: var(--bg-color);
+            padding: 10px;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            z-index: 1;
+        }
+
+        .product-box:hover .add-cart {
+            opacity: 1;
+            transition: opacity 0.4s ease;
+        }
+
+        /* Dropdown styles */
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar li {
+            position: relative;
+        }
+
+        .navbar .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .navbar .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .navbar li:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a class="logo"><i class="bx bxs-basket"></i>Indian Spices</a>
+    
+        <ul class="navbar">
+            <li><a href="../main.html" class="home-active">Home</a></li>
+            <li>
+                <a href="../know products/productpage.html">Know Our Products</a>
+            </li>
+            <li><a href="../add to cart/add to cart.html">All Products</a></li>
+            <li><a href="../contact us/contactus.html">Contact</a></li>
+        </ul>
+    
+        <div class="profile">
+            <a href="../register.html"><img src="../images/log.png" alt=""></a>
+            <span>Login</span>
+            <i class="bx bx-caret-down"></i>
+            <!-- Add cart icon -->
+            <i class="bx bx-cart-alt cart-icon"></i>
+        </div>
+    </header>
+
+    <section class="shop container">
+        <div class="section-title"></div>
+        <div class="shop-content">
+
+            <div class="product-box">
+                <a href="../know products/productdes1.html"><img src="../images/turmeric.jpg" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Turmeric Powder</h2></center>
+                <center><span class="price">10$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes2.html"><img src="../images/chilli.webp" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Chillie Powder</h2></center>
+                <center><span class="price">10$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes3.html"><img src="../images/corriander.avif" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Corriander Powder</h2></center>
+                <center><span class="price">12$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes4.html"><img src="../images/IMG-20240319-WA0001.jpg" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Bingo</h2></center>
+                <center><span class="price">3$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes5.html"><img src="../images/IMG-20240319-WA0002.jpg" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Kurkure- Puffcorn</h2></center>
+                <center><span class="price">3$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes6.html"><img src="../images/IMG-20240319-WA0011.jpg" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Kukure-Masala Munch</h2></center>
+                <center><span class="price">3.99$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes7.html"><img src="../images/IMG-20240319-WA0017.jpg" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Maggie</h2></center>
+                <center><span class="price">2$</span></center>
+            </div>
+            <div class="product-box">
+                <a href="../know products/productdes8.html"><img src="../images/IMG-20240319-WA0003.jpg" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Jumpys</h2></center>
+                <center><span class="price">2$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes9.html"><img src="../images/IMG-20240319-WA0019.jpg" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Corriander Leaves</h2></center>
+                <center><span class="price">2$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes10.html"><img src="../images/IMG-20240319-WA0020.jpg" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Bujia Sev</h2></center>
+                <center><span class="price">2$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes11.html"><img src="../images/IMG-20240319-WA0021.jpg" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Soya Sticks</h2></center>
+                <center><span class="price">2$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes12.html"><img src="../images/asfotida.jpg" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Asafoetida Powder</h2></center>
+                <center><span class="price">2$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes13.html"><img src="../images/pan.webp" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Paneer Masala Powder</h2></center>
+                <center><span class="price">2$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes14.html"><img src="../images/chicken.webp" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Chicken Tikka</h2></center>
+                <center><span class="price">2$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes15.html"><img src="../images/chole.jpg" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Chole Masala</h2></center>
+                <center><span class="price">2$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes16.html"><img src="../images/biryani.jpg" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Biryani Masala</h2></center>
+                <center><span class="price">2$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes17.html"><img src="../images/sambaar.webp" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Sambaar Powder</h2></center>
+                <center><span class="price">2$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes18.html"><img src="../images/marie.jpg" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Marie Gold</h2></center>
+                <center><span class="price">3$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes19.html"><img src="../images/50-50.webp" alt="" class="product-img"></a>
+                <center><h2 class="product-title">50-50 Biscuits</h2></center>
+                <center><span class="price">2$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes20.html"><img src="../images/parleg.jpg" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Parle-G</h2></center>
+                <center><span class="price">2$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes21.html"><img src="../images/panipuri.png" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Pani Puri Kit</h2></center>
+                <center><span class="price">8$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes22.html"><img src="../images/batter.jpg" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Idli Dosa Batter</h2></center>
+                <center><span class="price">10$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes23.html"><img src="../images/ashir.webp" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Roti Flour</h2></center>
+                <center><span class="price">14$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes24.html"><img src="../images/rice 2.jpg" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Basmati Rice</h2></center>
+                <center><span class="price">10$</span></center>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

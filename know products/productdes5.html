@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="../styleh.css">
+    <link rel="stylesheet" href="../know products/pdes.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        
+        /* Base CSS */
+        * {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            margin-top: 0; /* Adjusted margin-top to move the entire page up */
+        }
+
+        /* Product section styles */
+        .product-section {
+            padding-top: 60px; /* Added padding-top to the product section to maintain spacing */
+        }
+
+        .product-container {
+            display: flex;
+            padding-bottom: 50px;
+            margin-top: 20px; /* Adjusted margin-top of the product container */
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .product-container:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image {
+            flex: 0 0 40%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .product-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .product-details {
+            flex: 1;
+            padding: 1.5rem;
+        }
+
+        .product-details h2 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-details p {
+            margin-bottom: 1rem;
+        }
+
+        .quantity-input {
+            margin-bottom: 1rem;
+        }
+
+        .add-to-cart {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <object type="text/html" data="../navigation/navigationbar.html" style="width: 100%;"></object>
+
+    <section class="product-section container">
+        <!-- Product 1 -->
+        <div class="product-container">
+            <div class="product-image">
+                <img src="../images/IMG-20240319-WA0002.jpg" alt="Product 1">
+            </div>
+            <div class="product-details">
+                <h2>Organic Chillie Powder</h2>
+                <p>Chili powder is a versatile spice blend derived from dried chili peppers, typically mixed with other spices like cumin, garlic powder, and oregano. It adds a vibrant color and a bold, fiery flavor to a wide range of dishes, from Mexican cuisine to Indian curries. Whether sprinkled sparingly for a subtle kick or used generously for a spicy punch, chili powder lends its unique zest to soups, stews, marinades, and sauces, making it a staple in kitchens worldwide for adding depth and heat to culinary creations.</p>
+                <br>
+                <p>In Indian cuisine, chili powder is used in both vegetarian and non-vegetarian dishes, such as curries, stews, stir-fries, marinades, and chutneys. It is often combined with other spices like coriander, cumin, turmeric, and fenugreek to create complex and aromatic spice blends that form the foundation of many Indian recipes.
+
+                    Aside from its culinary uses, chili powder is also valued for its health benefits. It contains capsaicin, a compound known for its metabolism-boosting properties and potential to alleviate pain and inflammation.
+                    
+                    However, it's essential to use chili powder sparingly, especially if you're not accustomed to spicy foods, as it can quickly overpower a dish. Adjust the amount according to your taste preferences to enjoy the perfect balance of heat and flavor in your Indian culinary creations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="other-products container" style="margin-top: 40px;">
+        <h2>Other Products</h2>
+        <div class="shop-content" style="margin-top: 40px;">
+            <div class="product-box">
+                <a href="../know products/productdes1.html"><img src="../images/turmeric.jpg" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Turmeric Powder</h2></center>
+                <center><span class="price">10$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href="../know products/productdes3.html"><img src="../images/corriander.avif" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Corriander Powder</h2></center>
+                <center><span class="price">10$</span></center>
+            </div>
+
+            <div class="product-box">
+                <a href=""><img src="../images/IMG-20240319-WA0001.jpg" alt="" class="product-img"></a>
+                <center><h2 class="product-title">Bingo</h2></center>
+                <center><span class="price">3$</span></center>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
